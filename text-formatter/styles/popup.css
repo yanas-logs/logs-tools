@@ -1,0 +1,110 @@
+body {
+    width: 350px;
+    min-height: 400px;
+    margin: 0;
+    padding: 16px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-section {
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .output-section {
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 14px;
+    min-height: 80px;
+  }
+  
+  .format-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .output-container {
+    background: #f8f9fa;
+    border-radius: 4px;
+    padding: 8px;
+    min-height: 60px;
+    margin-bottom: 8px;
+  }
+  
+  #outputText {
+    margin: 0;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+  
+  .notification {
+    position: fixed;
+    margin-top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: #333;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .notification-output {
+    position: fixed;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: #333;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .notification.success {
+    background: #28a745;
+  }
+  
+  .notification.warning {
+    background: #ffc107;
+    color: #333;
+  }
+  
+  .notification.error {
+    background: #dc3545;
+  }
+  
+  .notification.info {
+    position: fixed;
+    background: #dc3545;
+  }
